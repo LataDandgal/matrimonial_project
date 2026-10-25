@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dil Se Rishta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="icon" href="./images/favicon/favicon-96x96.png">
+  </head>
+  <body>    
+    <nav class="navbar navbar-expand-lg shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="./images/logo.png" alt="" height="75px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <a class="navbar-brand" href="#."><img src="./images/logo.png" alt="" height="75px"></a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link " href="#">About</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Membership</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="success_stories.html">Success Stories</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="profiles_creation.html">Create Profile</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+                </li>               
+            </ul>
+            <div class="d-flex gap-3">              
+              <a class="btn btn-outline-primary flex-fill" href="register.html">Register</a>
+              <a class="btn btn-primary flex-fill" href="login.html">Login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="individual-profile-wrapper py-5">        
+        <div class="container rounded-5">      
+            <div>
+                <h4 class="fw-bold">Profile</h4>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb list-unstyled">
+                        <li class="breadcrumb-item"><a class="text-decoration-none" href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a class="text-decoration-none" href="search_profile.html">Search Profile</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Individual Profile</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="profile-card p-3">
+                <!-- LEFT : PROFILE IMAGE -->
+                <div class="profile-image">
+                    <img src="./images/profile_01.png" alt="Profile">
+                </div>
+                <!-- RIGHT : PROFILE DETAILS -->
+                <div class="profile-details my-lg-5">
+                    <!-- NAME ROW -->
+                    <div class="profile-top d-flex justify-content-between align-items-start">
+                        <div class="name-section">
+                            <div class="d-flex flex-wrap align-items-center gap-2">
+                                <h2 class="profile-name mb-0">Priya Sharma</h2>
+
+                                <span class="verified-badge">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    Verified
+                                </span>
+                            </div>
+                            <p class="profile-id">ID: 123456</p>
+                        </div>
+
+                        <!-- SHORTLIST -->
+                        <button class="shortlist-btn">
+                            <i class="bi bi-heart"></i>
+                            Shortlist
+                        </button>
+
+                    </div>
+                    <!-- PROFILE INFORMATION -->
+                    <div class="profile-info">
+
+                        <div class="info-item">
+                            <i class="bi bi-person"></i>
+                            <span>26 Years, 5'4"</span>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="bi bi-droplet"></i>
+                            <span>Hindu - Maratha</span>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="bi bi-briefcase"></i>
+
+                            <div>
+                                <span>Software Engineer</span>
+                                <small>Infosys, Pune</small>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="bi bi-geo-alt"></i>
+                            <span>Pune, Maharashtra</span>
+                        </div>
+
+                    </div>
+
+                    <!-- BUTTONS -->
+                    <div class="profile-actions  mt-3">
+                        <button class="btn btn-primary mb-md-2 m-lg-0">
+                            Send Interest
+                        </button>
+                        <button class="btn btn-outline-primary">
+                            Chat Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+             <div class="profile-tabbing profile-tab my-1 p-4">
+                <ul class="nav nav-tabs my-2" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab" aria-controls="home" aria-selected="true">About</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="family-tab" data-bs-toggle="tab" data-bs-target="#family" type="button" role="tab" aria-controls="contact" aria-selected="false">Family</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="lifestyle-tab" data-bs-toggle="tab" data-bs-target="#lifestyle" type="button" role="tab" aria-controls="home" aria-selected="true">Lifestyle</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="partner-tab" data-bs-toggle="tab" data-bs-target="#partner" type="button" role="tab" aria-controls="profile" aria-selected="false">Partner preferences</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="gallery-tab" data-bs-toggle="tab" data-bs-target="#gallery" type="button" role="tab" aria-controls="contact" aria-selected="false">Gallery</button>
+                    </li>
+                </ul>
+                <div class="tab-content my-5" id="myTabContent">
+                    <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <h6 class="pb-4 fw-bold">About me</h6>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet.."</p>
+                                <h6 class="py-3 fw-bold">Basic Details</h6>
+                                <div class="row basic-details py-2">
+                                    <div class="col-6 col-md-4 col-lg-4">                                        
+                                        <p>Age</p>
+                                        <p class="fw-bold">26 Years </p>                                                                           
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-4">                                        
+                                        <p>Company</p>
+                                        <p class="fw-bold">Maratha </p>                                                                           
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-4">                                        
+                                        <p>Marital Status</p>
+                                        <p class="fw-bold">Never Married </p>                                                                           
+                                    </div>                                                                      
+                                </div> 
+                                <div class="row basic-details py-2">
+                                    <div class="col-6 col-md-4 col-lg-4">                                        
+                                        <p>Education </p>
+                                        <p class="fw-bold">BE </p>                                                                           
+                                    </div>
+                                    
+                                    <div class="col-6 col-md-4 col-lg-4">                                        
+                                        <p>Caste</p>
+                                        <p class="fw-bold">OBC </p>                                                                           
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-4">                                        
+                                        <p>Religion</p>
+                                        <p class="fw-bold">Hindu </p>                                                                           
+                                    </div>                                                                        
+                                </div> 
+                                <div class="row basic-details py-2">
+                                    <div class="col-6 col-md-4 col-lg-4">                                        
+                                        <p>Occupation</p>
+                                        <p class="fw-bold">Software Engineer </p>                                                                           
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-4">                                        
+                                        <p>Mother Tongue</p>
+                                        <p class="fw-bold">Telugu </p>                                                                           
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-4">                                        
+                                        <p>Income</p>
+                                        <p class="fw-bold">15 LPA </p>                                                                           
+                                    </div>                                    
+                                </div>
+                                <div class="row basic-details py-2">
+                                    <div class="col-6 col-md-4 col-lg-4">                                        
+                                        <p>Family Type</p>
+                                        <p class="fw-bold">Nuetral </p>                                                                           
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-4">                                        
+                                        <p>Relocate</p>
+                                        <p class="fw-bold">Abroad </p>                                                                           
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-4">                                        
+                                        <p>Location</p>
+                                        <p class="fw-bold">Pune, Maharashtra </p>                                                                           
+                                    </div>                                   
+                                </div>                               
+                            </div>
+                            
+                            <div class="col-lg-4 border-start">
+                                <div class="card bg-light-purple border-0">
+                                    <div class="card-body">
+                                        <h6 class="fw-bold">Looking For</h6>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. ... The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet.."</p>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="tab-pane fade" id="family" role="tabpanel" aria-labelledby="contact-tab">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="lifestyle" role="tabpanel" aria-labelledby="profile-tab">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="partner" role="tabpanel" aria-labelledby="contact-tab">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="gallery" role="tabpanel" aria-labelledby="contact-tab">                        
+                        <div class="row g-4">
+                            <div class="col-lg-3 col-md-3 col-sm-12">
+                                <div class="gallery-item">
+                                   <img src="./images/gallery_01.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-12">
+                                <div class="gallery-item">
+                                   <img src="./images/profile_06.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-12">
+                                <div class="gallery-item">
+                                   <img src="./images/profile_06.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-12">
+                                <div class="gallery-item">
+                                   <img src="./images/profile_06.png" class="img-fluid" alt="">
+                                </div>
+                            </div>                            
+                        </div>                        
+                    </div>                   
+                </div>
+            </div>                                             
+        </div>
+    </section>    
+    <footer class="footer-section pt-5">
+        <div class="container">
+            <div class="row gy-4 pb-4">
+                <!-- Logo -->
+                <div class="col-lg-3 col-md-4">
+                    <div class="d-flex align-items-center mb-3 logo-section">
+                        <img src="./images/white-logo.png" alt="logo" width="48" class="me-3">
+                        <div>
+                            <h2 class="footer-logo mb-0">SoulMatch</h2>
+                            <small>Together for Life</small>
+                        </div>
+                    </div>
+
+                    <p class="footer-text mb-3">
+                        Trusted by millions since 2005.
+                    </p>
+
+                    <p class="footer-text">
+                        We help you find your perfect life partner.
+                    </p>
+
+                    <div class="social-icons mt-4">                        
+                        <ul class="list-unstyled social_media">
+                            <li class="list-inline-item">
+                            <span class="p-1"><i class="bi bi-instagram"></i></span>
+                            </li>
+                            <li class="list-inline-item">
+                            <span class="p-1"><i class="bi bi-twitter"></i></i></span>
+                            </li>
+                            <li class="list-inline-item">
+                            <span class="p-1"><i class="bi bi-facebook"></i></span>
+                            </li>
+                            <li class="list-inline-item">
+                            <span class="p-1"><i class="bi bi-linkedin"></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Company -->
+                <div class="col-lg-2 col-md-4">
+                    <h5>Company</h5>
+
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-3 col-md-4">
+                    <h5>Services</h5>
+
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="#">Search Profiles</a></li>
+                        <li><a href="#">Premium Membership</a></li>
+                        <li><a href="#">Matches</a></li>
+                        <li><a href="#">Membership Plans</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+
+                <!-- Help -->
+                <div class="col-lg-2 col-md-6">
+                    <h5>Help</h5>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <!-- Contact -->
+                <div class="col-lg-2 col-md-6">
+                    <h5>Contact Us</h5>
+                    <ul class="footer-contact list-unstyled">
+                        <li>
+                            <i class="bi bi-telephone-fill"></i>
+                            +91 98765 43210
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope-fill"></i>
+                            support@gmail.com
+                        </li>
+                        <li>
+                            <i class="bi bi-geo-alt-fill"></i>
+                            Baner, Pune - 411045
+                        </li>
+                        <li>
+                            <i class="bi bi-globe2"></i>
+                            Maharashtra, India
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2024 soulmatch.com | All Rights Reserved.
+        </div>
+    </footer>    
+     <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
